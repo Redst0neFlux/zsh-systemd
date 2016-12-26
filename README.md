@@ -17,9 +17,29 @@ After: `sc-reboot`
 
 ## Installation
 
-### [zplug](https://github.com/zplug/zplug)
+### [Oh My Zsh](http://ohmyz.sh)
 
-Add `zplug "mikcho/zsh-systemd"` to `~/.zshrc`
+Clone this repository into `$ZSH_CUSTOM/plugins`:
+```shell
+git clone git://github.com/mikcho/zsh-systemd $ZSH_CUSTOM/plugins/zsh-systemd
+```
+
+Add the plugin into `~/.zshrc`:
+```shell
+plugins=(zsh-systemd)
+```
+
+Source `~/.zshrc`:
+```shell
+source ~/.zshrc
+```
+
+### [zplug](https://zplug.sh)
+
+Add the plugin into `~/.zshrc`:
+```shell
+zplug "mikcho/zsh-systemd"
+```
 
 ## License
 
