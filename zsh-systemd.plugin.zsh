@@ -3,7 +3,9 @@ user_commands=(
 )
 
 sudo_commands=(
-  start stop reload restart # Unit Commands
+  start restart stop reset-failed # Unit Commands
+  daemon-reload # Manager Lifecycle Commands
+  enable disable # Unit File Commands
   poweroff reboot # System Commands
 )
 
